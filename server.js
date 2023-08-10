@@ -8,5 +8,5 @@ const mongodbConnection = require("./config/mongodbConnection");
 const port = 5000;
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.send("Hello Manish!"));
 app.listen(port, () => console.log(`Node JS Server Running On Port ${port}!`));
