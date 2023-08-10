@@ -29,7 +29,7 @@ module.exports = async (user, mailType) => {
       emailContent = `<div><h1>Please click on the below link to verify your email address</h1> <a href="http://localhost:3000/verifyemail/${encryptedToken}">${encryptedToken}</a>  </div>`;
 
       mailOptions = {
-        from: "sheylearnings@gmail.com",
+        from: "robinkumar87006@gmail.com",
         to: user.email,
         subject: "Verify Email For MERN Auth",
         html: emailContent,
@@ -38,7 +38,7 @@ module.exports = async (user, mailType) => {
       emailContent = `<div><h1>Please click on the below link to reset your password</h1> <a href="http://localhost:3000/resetpassword/${encryptedToken}">${encryptedToken}</a>  </div>`;
 
       mailOptions = {
-        from: "sheylearnings@gmail.com",
+        from: "robinkumar87006@gmail.com",
         to: user.email,
         subject: "Reset password For MERN Auth",
         html: emailContent,
